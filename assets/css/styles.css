@@ -13,6 +13,17 @@ body{
     background-color: #ededed;
 
 }
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'navbar navbar '
+    'aside main '
+    'footer footer ';
+    min-height: 100vh;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+
+}
 .navbar{
     grid-area: navbar;
     background-color: midnightblue;
@@ -82,12 +93,4 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-.grid-container{
-    display: grid;
-    grid-template-areas: 
-    'navbar navbar navbar navbar navbar navbar'
-    'aside main main main main main'
-    'footer footer footer footer footer footer';
-
 }
